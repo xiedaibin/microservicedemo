@@ -11,4 +11,4 @@ COPY . /app
 EXPOSE 80
 
 #使用dotnet LisAPI.dll来运行asp.net core项目，注意大小写
-ENTRYPOINT ["dotnet", "BasicsService.dll"]
+ENTRYPOINT ["dotnet", "InvoicingService.dll"]
