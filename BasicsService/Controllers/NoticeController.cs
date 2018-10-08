@@ -50,7 +50,7 @@ namespace BasicsService.Controllers
                     var message = new MimeMessage();
                     //这里是测试邮箱，请不要发垃圾邮件，谢谢
                     message.From.Add(new MailboxAddress("gswmicroservice", "gswmicroservice@163.com"));
-                    message.To.Add(new MailboxAddress("285130205", "285130205@qq.com"));
+                    message.To.Add(new MailboxAddress("1137418730", "1137418730@qq.com"));
 
                     message.Subject = "作业报警";
                     message.Body = new TextPart("plain") { Text = emailBody.ToString() };
@@ -58,11 +58,11 @@ namespace BasicsService.Controllers
                     {
 
                         client.ServerCertificateValidationCallback = (s, c, h, e) => true;
-
+                        
 
                         client.Connect("smtp.163.com", 25, false);
                         client.AuthenticationMechanisms.Remove("XOAUTH2");
-                        client.Authenticate("gswmicroservice", "gsw790622");
+                        client.Authenticate("xiedaibin@sina.cn", "13778443528");
                         client.Send(message);
                         client.Disconnect(true);
                     }
