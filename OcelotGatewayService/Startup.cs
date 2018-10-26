@@ -29,6 +29,18 @@ namespace OcelotGatewayService
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            ////配置IdentityService4认证服务器
+            //var authenticationProviderKey = "TestKey";
+            //Action<IdentityServerAuthenticationOptions> options = o =>
+            //{
+            //    o.Authority = "https://whereyouridentityserverlives.com";
+            //    o.ApiName = "api";
+            //    o.SupportedTokens = SupportedTokens.Both;
+            //    o.ApiSecret = "secret";
+            //};
+
+            //services.AddAuthentication()
+            //    .AddIdentityServerAuthentication(authenticationProviderKey, options);
 
             //设置Ocelot相关配置  OcelotPolly 依赖Polly
             services
