@@ -15,7 +15,7 @@ namespace BasicsService.Controllers
         /// 主健康检查
         /// </summary>
         /// <returns></returns>
-        [HttpGet("/health")]
+        [HttpGet]
         public IActionResult KeyHealth()
         {
             return Content("BasicsService KeyHealth检查成功！");

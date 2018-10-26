@@ -26,7 +26,7 @@ namespace IdentityServerHost
         {
             return new List<ApiResource>
             {
-                new ApiResource("BasicsServiceApi", "基础服务资源"),
+                new ApiResource("BasicsServiceApi", "基础服务资源!"),
                 new ApiResource("InvoicingServiceApi", "货物服务资源!")
             };
         }

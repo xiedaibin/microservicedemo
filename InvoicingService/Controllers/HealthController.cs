@@ -15,7 +15,7 @@ namespace InvoicingService.Controllers
         /// 主健康检查
         /// </summary>
         /// <returns></returns>
-        [HttpGet("/health")]
+        [HttpGet]
         public IActionResult KeyHealth()
         {
             return  Content("InvoicingService KeyHealth检查成功！");

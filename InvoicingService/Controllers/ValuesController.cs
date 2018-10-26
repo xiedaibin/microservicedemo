@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InvoicingService.Controllers
 {
-    [Authorize("Permission")]
+    [Authorize]
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
